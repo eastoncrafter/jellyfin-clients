@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jellyfin Clients</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    header {
+      text-align: center;
+      padding: 2rem 0;
+    }
+    .logo {
+      max-width: 200px;
+      height: auto;
+    }
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 1rem;
+    }
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+    }
+    .client-card {
+      flex: 1 1 200px;
+      text-align: center;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 1rem;
+    }
+    .client-card img.app-logo {
+      max-width: 175px;
+      height: auto;
+    }
+    .client-card h2 {
+      margin: 0.5rem 0;
+      font-size: 1.25rem;
+    }
+    .client-card a img.badge {
+      
+      max-width: 200px;
+      height: auto;
+      margin-top: -1rem;
+    }
+/* Lift the iOS logo up by 0.5rem */
+    #ios img.app-logo {
+      margin-top: -0.5rem;
+   }
+  </style>
+</head>
+<body>
+  <header>
+    <!-- Place your jellyfin logo in assets/jellyfin-logo.svg -->
+    <img src="assets/jellyfin-logo.svg" alt="Jellyfin Logo" class="logo">
+  </header>
+  <main class="container">
+    <div class="grid">
+
+      <!-- Android Client -->
+      <div class="client-card" id="android">
+        <!-- assets/android-logo.png: official Android icon or Jellyfin Android logo -->
+        <img src="assets/Android_logo_2023.svg" alt="Android Logo" class="app-logo">
+        <h2></h2>
+        <a href="https://play.google.com/store/apps/details?id=org.jellyfin.mobile" target="_blank" rel="noopener">
+          <!-- assets/google-play-badge.png: Play Store badge -->
+          <img src="assets/google-play-badge.svg" alt="Get it on Google Play" class="badge">
+        </a>
+      </div>
+
+      <!-- iOS Client -->
+      <div class="client-card" id="ios">
+        <!-- assets/ios-logo.png: official iOS icon or Jellyfin iOS logo -->
+        <img src="assets/ios-logo.png" alt="iOS Logo" class="app-logo">
+        <h2>iOS</h2>
+        <a href="https://apps.apple.com/us/app/jellyfin-mobile/id1480192618" target="_blank" rel="noopener">
+          <!-- assets/app-store-badge.png: App Store badge -->
+          <img src="assets/app-store-badge.png" alt="Download on the App Store" class="badge">
+        </a>
+      </div>
+
+      <!-- Apple TV Client -->
+      <div class="client-card" id="apple-tv">
+        <!-- assets/appletv-logo.png: Apple TV icon or Swiftfin logo -->
+        <img src="assets/appletv-logo.png" alt="Apple TV Logo" class="app-logo">
+        <h2>Apple TV</h2>
+        <a href="https://apps.apple.com/app/swiftfin/id1604098728" target="_blank" rel="noopener">
+          <!-- assets/app-store-badge.png: reuse App Store badge -->
+          <img src="assets/app-store-badge.png" alt="Download on the App Store" class="badge">
+        </a>
+      </div>
+
+      <!-- Android TV Client -->
+      <div class="client-card" id="android-tv">
+        <!-- assets/androidtv-logo.png: Android TV icon or Jellyfin Android TV logo -->
+        <img src="assets/androidtv-logo.png" alt="Android TV Logo" class="app-logo">
+        <h2>Android TV</h2>
+        <a href="https://play.google.com/store/apps/details?id=org.jellyfin.androidtv" target="_blank" rel="noopener">
+          <!-- assets/google-play-badge.png: reuse Play Store badge -->
+          <img src="assets/google-play-badge.png" alt="Get it on Google Play" class="badge">
+        </a>
+      </div>
+
+    </div>
+  </main>
+</body>
+</html>
